@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+    <img src="{{ url_for('static', filename='img/emblem.png') }}" class="img-thumbnail">
+    <span class="font-weight-bold">Аварийный доступ</span>
+</div>
+
+<form method="post" action="" novalidate>
+    {{ form.hidden_tag() }}
+
+    {{ form.spaceman_id.label }} <br>
+    {{ form.spaceman_id(class="form-control") }} <br>
+
+    {{ form.spaceman_name.label() }} <br>
+    {{ form.spaceman_name(class="form-control") }} <br>
+
+    {{ form.captain_id.label }} <br>
+    {{ form.captain_id(class="form-control") }} <br>
+
+    {{ form.captain_name.label() }} <br>
+    {{ form.captain_name(class="form-control") }} <br>
+
+    {{ form.submit(class="btn btn-outline-primary mb-4") }} <br>
+</form>
+
+{% endblock %}

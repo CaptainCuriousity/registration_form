@@ -1,0 +1,10 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+{% set member = members|random %}
+<h2>{{ member["name"] }} {{ member["surname"]}}</h2>
+<img src="{{ member['photo_reference'] }}" alt="Кто-то удалил картинку :(( ">
+<p>{{ member["professions"]|join(", ") }}</p>
+
+{% endblock %}

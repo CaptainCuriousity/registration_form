@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Пейзажи Марса </h2>
+
+<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        {% for photo in photo_paths %}
+            <li data-target="#mainCarousel" data-slide-to="{{ loop['index0'] }}" {% if loop["first"] %} class="active" {% endif %}></li>
+        {% endfor %}
+    </ol>
+
+    <div class="carousel-inner">
+        {% for photo in photo_paths %}
+            <div class="carousel-item {% if loop['first'] %} active {% endif %}">
+                <img src="{{ photo }}" class="d-block w-100">
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+    <form method="post" enctype="multipart/form-data" action="" novalidate>
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.filename.label }}
+            {{ form.filename(class="form-control-file") }}
+        </div>
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+
+{% endblock %}

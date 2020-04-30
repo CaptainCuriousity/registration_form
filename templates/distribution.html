@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Размещение по каютам </h2>
+
+    {% for field in passengers %}
+        <h5> {{ field }} - Каюта№ {{ loop["index"] }} {% if loop["first"] %} - Капитан корабля {% endif %}</h5>
+    {% endfor %}
+{% endblock %}

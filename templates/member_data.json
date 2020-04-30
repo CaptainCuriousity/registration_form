@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "name": "Ридли",
+      "surname": "Скотт",
+      "photo_reference": "https://static.piter.tv/images/content_page_photos/cbW8LRPwhGPQnUltm1T1XNHTEvRFvy1a.jpg",
+      "professions": [
+        "Киберинженер", "Специалист по кибербезопасности"
+      ]
+    },
+    {
+      "name": "Эндрю",
+      "surname": "Уир",
+      "photo_reference": "https://img.google-info.cn/storage/big/4482849.jpg",
+      "professions": [
+        "Специалист по радиационной защите"
+      ]
+    },
+    {
+      "name": "Анатолий",
+      "surname": "Вассерман",
+      "photo_reference": "https://cdn.fishki.net/upload/post/201509/04/1651560/33_1.jpg",
+      "professions": [
+        "Главный корреспондент"
+      ]
+    },
+    {
+      "name": "Альберт",
+      "surname": "Эйнштейн",
+      "photo_reference": "https://exeterpoetryfestival.files.wordpress.com/2016/10/einstein.jpg",
+      "professions": [
+        "Программист Python", "Астрофизик"
+      ]
+    },
+    {
+      "name": "Анатолий",
+      "surname": "Перельман",
+      "photo_reference": "https://24smi.org/public/media/resize/800x-/celebrity/2018/06/18/gcbfnva0tetb-grigorii-perelman-vedet-zamknutyi-obraz-zhizni.jpg",
+      "professions": [
+        "Главный математик", "Эксперт по нейросетям", "Программист на assembler"
+      ]
+    }
+  ]
+}

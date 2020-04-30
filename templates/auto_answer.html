@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Фамилия: {{ user_data["surname"] }} </h2>
+<h2> Имя: {{ user_data["name"] }} </h2>
+<h2> Образование: {{ user_data["education"] }} </h2>
+<h2> Профессия: {{ user_data["profession"] }} </h2>
+<h2> Мотивация: {{ user_data["motivation"] }} </h2>
+<h2> Пол: {{ user_data["sex"] }} </h2>
+<h2> Готов ли остаться на Марсе: {{ user_data["ready"] }} </h2>
+
+{% endblock %}

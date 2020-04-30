@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2> Register Form </h2>
+<form method="post" action="">
+    {{ form.hidden_tag() }}
+
+    {{ form.email.label() }} <br>
+    {{ form.email(class="form-control") }} <br>
+
+    {{ form.password.label() }} <br>
+    {{ form.password(class="form-control") }} <br>
+
+    {{ form.repeat_password.label() }} <br>
+    {{ form.repeat_password(class="form-control") }} <br>
+
+
+    {{ form.surname.label() }} <br>
+    {{ form.surname(class="form-control") }} <br>
+
+    {{ form.name.label() }} <br>
+    {{ form.name(class="form-control") }} <br>
+
+    {{ form.age.label() }} <br>
+    {{ form.age(class="form-control") }} <br>
+
+    {{ form.position.label() }} <br>
+    {{ form.position(class="form-control") }} <br>
+
+    {{ form.speciality.label() }} <br>
+    {{ form.speciality(class="form-control") }} <br>
+
+    {{ form.address.label() }} <br>
+    {{ form.address(class="form-control") }} <br>
+
+    {{ form.submit(class="btn btn-primary") }} <br>
+</form>
+
+{% endblock %}
